@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Assignment - RAT/IT/2020/F/0072</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="myscripts.js"></script>
+  </head>
+
+  <body class="formBody">
+    <div class="form">
+      <form
+        action="db.php"
+        name="regForm"
+        class="regForm"
+        method="post"
+        onsubmit="return formValidate();"
+      >
+        <div class="inputs">
+          <table>
+            <tr>
+              <td>
+                <p>Name :</p>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="write your name"
+                />
+                <p class="nameError"></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Email :</p>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="write your email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Password :</p>
+              </td>
+              <td>
+                <input type="password" name="password" id="password" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Phone Number :</p>
+              </td>
+              <td>
+                <input type="number" name="phone" id="phone" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Student_ID :</p>
+              </td>
+              <td>
+                <input type="text" name="sid" id="sid" />
+                <br />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Gender :</p>
+              </td>
+              <td>
+                Male
+                <input type="radio" name="gender" value="male" id="male" />
+
+                Female
+                <input type="radio" name="gender" value="female" id="female" />
+                Other
+                <input type="radio" name="gender" id="other" value="other" />
+                <br />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Language :</p>
+              </td>
+              <td>
+                <select name="myselect" id="myselect">
+                  <option value="selectlan">Select Language</option>
+                  <option value="english">English</option>
+                  <option value="sinhala">Sinhala</option>
+                  <option value="tamil">Tamil</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <p>Zip Code :</p>
+              </td>
+              <td>
+                <input type="number" name="zip" id="zip" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>About :</p>
+              </td>
+              <td>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  cols="25"
+                  rows="5"
+                  placeholder="write about yourself"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button class="button" type="submit">Register</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
